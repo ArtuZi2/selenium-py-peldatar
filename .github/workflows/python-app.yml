@@ -39,7 +39,7 @@ jobs:
       run: pip install seleniumbase
     - name: Install chromedriver
       run: |
-        seleniumbase install chromedriver
+        sbase install chromedriver latest
     - name: Run Tests
       run: |
         selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" selenium-homework/start.py
