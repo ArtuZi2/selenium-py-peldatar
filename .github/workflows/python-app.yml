@@ -36,7 +36,7 @@ jobs:
       run: |
         sudo apt install google-chrome-stable
     - name: Start Selenium
-      run: docker compose up -d
+      run: docker-compose up -d
     - name: Install seleniumbase
       run: pip install seleniumbase
     - name: Install chromedriver
