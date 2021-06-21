@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python application
+name: Selenium test
 
 on:
   push:
@@ -16,22 +16,34 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-        
+    - name: install Nodejs
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        if [ -f testproject/requirements.txt ]; then pip install -r testproject/requirements.txt; fi
-        
-    - name: Test with pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Install Selenium Side Runner
       run: |
-        pytest testproject/test_mymath.py --alluredir=allure-results
-        
+        npm install -g selenium-side-runner
+    - name: Install Chrome
+      run: |
+        sudo apt install google-chrome-stable
+    - name: Install seleniumbase
+      run: pip install seleniumbase
+    - name: Install chromedriver
+      run: |
+        sbase install chromedriver latest
+    - name: Run Tests
+      run: |
+        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" selenium-homework/start.py
+    
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
