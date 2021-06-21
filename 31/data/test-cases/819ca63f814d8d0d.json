@@ -1,0 +1,163 @@
+{
+  "uid" : "819ca63f814d8d0d",
+  "name" : "test_add_zero",
+  "fullName" : "testproject.test_mymath#test_add_zero",
+  "historyId" : "77caee529814bb5616db6b28df37c87c",
+  "time" : {
+    "start" : 1624264836687,
+    "stop" : 1624264836687,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testproject"
+  }, {
+    "name" : "suite",
+    "value" : "test_mymath"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-223"
+  }, {
+    "name" : "thread",
+    "value" : "3034-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testproject.test_mymath"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "3f71f37e7c437af",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/30//#testresult/3f71f37e7c437af",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624200149093,
+          "stop" : 1624200149093,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "361fe22b72dd1c8a",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/29//#testresult/361fe22b72dd1c8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624100774063,
+          "stop" : 1624100774063,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1a5236df4fd9dffe",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/28//#testresult/1a5236df4fd9dffe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624099288857,
+          "stop" : 1624099288857,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a8b0995d1a374fb0",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/27//#testresult/a8b0995d1a374fb0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624039461106,
+          "stop" : 1624039461106,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "c81ba10bde7e01d2",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/26//#testresult/c81ba10bde7e01d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624004966462,
+          "stop" : 1624004966462,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "adee274e28c821f3",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/24//#testresult/adee274e28c821f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623932395780,
+          "stop" : 1623932395780,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4a3f27e2eeddf9c9",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/23//#testresult/4a3f27e2eeddf9c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623932373387,
+          "stop" : 1623932373387,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3a4f1bbf85c119ce",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/22//#testresult/3a4f1bbf85c119ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623932054666,
+          "stop" : 1623932054666,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "9994d64e15d6198d",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/21//#testresult/9994d64e15d6198d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623929622396,
+          "stop" : 1623929622396,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "aae0178167b04562",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/20//#testresult/aae0178167b04562",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623753620144,
+          "stop" : 1623753620144,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "158f8ea5a282e5bf",
+        "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/19//#testresult/158f8ea5a282e5bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623419194079,
+          "stop" : 1623419194080,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "819ca63f814d8d0d.json",
+  "parameterValues" : [ ]
+}
