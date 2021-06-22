@@ -35,6 +35,8 @@ jobs:
     - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
+    - name: Start Selenium
+      run: docker-compose up -d
     - name: Install seleniumbase
       run: pip install seleniumbase
     - name: Install chromedriver
@@ -42,7 +44,7 @@ jobs:
         sbase install chromedriver latest
     - name: Run Tests
       run: |
-        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" selenium-homework/start.py
+        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" selenium-homework/start.side
     
     - name: Get Allure history
       uses: actions/checkout@v2
