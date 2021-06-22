@@ -1,3 +1,5 @@
+kisbetu = str(input("Írj be egy kisbetűt!"))
+
 for i in range(97, 122, 3):
     szam = i
     print(chr(szam), i, "\tb", i + 1, "\tc", i + 2)
