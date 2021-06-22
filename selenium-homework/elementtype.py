@@ -4,6 +4,7 @@ driver = webdriver.Chrome()
 
 driver.get("http://localhost:9999/trickyelements.html")
 element1 = driver.find_element_by_id("element1")
+if
 element2 = driver.find_element_by_id("element2")
 element2.click()
 element3 = driver.find_element_by_id("element3")
