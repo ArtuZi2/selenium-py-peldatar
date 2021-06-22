@@ -1,3 +1,5 @@
+#Nem sikerült még megoldanom, de ezt sem adom fel.
+
 kisbetu = str(input("Írj be egy kisbetűt!"))
 
 for i in range(97, 122, 3):
