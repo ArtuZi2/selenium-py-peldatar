@@ -1,3 +1,5 @@
+#nameerror-t még nem oldottam meg, küzdök vele
+
 from selenium import webdriver
 
 driver = webdriver.Chrome()
@@ -24,7 +26,7 @@ element5 = driver.find_element_by_id("element5")
 if driver.find_element_by_id("element5").get_attribute("type"):
     element5.click()
 
+label = driver.find_element_by_id("result")
+print(label.text)
 
-assert (driver.find_element_by_id("result") == f" {button.output} was clicked")
-
-driver.close()
+assert(label.text == f"{button.text} was clicked")
