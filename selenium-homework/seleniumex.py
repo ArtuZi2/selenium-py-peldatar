@@ -1,10 +1,17 @@
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(ChromeDriverManager().install())
+
 driver.get("https:/python.org")
-nemletezik = driver.find_element_by_id("nemletezik")
-try:
-    nemletezik = driver.find_element_by_id("nemletezik")
-except NoSuchElementException:
-    Print("Nincs ilyen elem")
+driver.find_element_by_id("nemletezik")
+
+def nemletezik():
+    try:
+        hiba = driver.find_element_by_id("nemletezik")
+
+    except:
+        print("Nincs ilyen elem")
+
+    finally:
+        driver.close()
