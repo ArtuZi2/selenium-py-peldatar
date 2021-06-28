@@ -28,44 +28,32 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Install Selenium Side Runner
+        if [ -f selenium-homework/requirements.txt ]; then pip install -r selenium-homework/requirements.txt; fi
+    - name: Test with pytest
       run: |
-        npm install -g selenium-side-runner
-    - name: Install Chrome
-      run: |
-        sudo apt install google-chrome-stable
-    - name: Start Selenium
-      run: docker-compose up -d
-    - name: Install seleniumbase
-      run: pip install seleniumbase
-    - name: Install chromedriver
-      run: |
-        sbase install chromedriver latest
-    - name: Run Tests
-      run: |
-        selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" selenium-homework/start.side
-    
+        pytest selenium-homework --alluredir=allure-results
+      env:
+        RUNENV: GITHUB    
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
       continue-on-error: true
       with:
-       ref: gh-pages
-       path: gh-pages
-    
+        ref: gh-pages
+        path: gh-pages
+        
     - name: Allure Report action from marketplace
       uses: simple-elf/allure-report-action@master
       if: always()
       with:
-          allure_results: allure-results
-          allure_history: allure-history
-          keep_reports: 20
-          
+        allure_results: allure-results
+        allure_history: allure-history
+        keep_reports: 20
+        
     - name: Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v2
       env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
