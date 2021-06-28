@@ -5,7 +5,6 @@ import pytest
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("https://brave-desert-0a706e303.azurestaticapps.net")
-
 def challange():
     message = "hellobello"
     user_message = driver.find_element_by_id("user_message").send_keys(message)
