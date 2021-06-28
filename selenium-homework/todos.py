@@ -10,5 +10,6 @@ print(todos)
 print(type(todos))
 
 for checkbox in todos:
+    checkbox.click()
     vmi = driver.find_element_by_xpath(''/html/body/div/div/div/ul/li[1]/span)
     print(vmi.text)
