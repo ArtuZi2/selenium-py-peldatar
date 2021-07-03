@@ -18,3 +18,5 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("https://python.org")
 search_field = driver.find_element_by_name('q')
 search_field.send_keys("hello")
+
+driver.close()
