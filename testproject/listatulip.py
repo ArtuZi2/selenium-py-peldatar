@@ -1,9 +1,9 @@
 numbers = input("Adj meg számokat vesszővel elválasztva!")
-    print(type(numbers))
+print(type(numbers))
 
-    lista = numbers.split(",")
-    print(lista)
+lista = numbers.split(",")
+print(lista)
 
 
-    tulip = tuple(lista)
-    print(tulip)"""
+tulip = tuple(lista)
+print(tulip)

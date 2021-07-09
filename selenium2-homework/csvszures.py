@@ -1,6 +1,6 @@
 import csv
 
-with open("table_in_csv", encoding="utf-8") as csvfile:
+with open("table_in.csv", encoding="utf-8") as csvfile:
     csvreader = csv.reader(csvfile, delimiter= ',')
     next(csvreader)
     for row in csvreader:
