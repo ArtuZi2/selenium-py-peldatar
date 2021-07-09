@@ -1,4 +1,9 @@
 [ {
+  "buildOrder" : 79,
+  "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/79/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "buildOrder" : 78,
   "reportUrl" : "https://ArtuZi2.github.io/selenium-py-peldatar/78/",
   "reportName" : "Allure Report with history",
