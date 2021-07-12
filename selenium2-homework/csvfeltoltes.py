@@ -11,7 +11,6 @@ def fill_table(id):
     element.clear()
     return element
 
-
 send_button = driver.find_element_by_id("submit")
 
 with open('table_in.csv', encoding='utf-8') as csvtable:
@@ -25,5 +24,6 @@ with open('table_in.csv', encoding='utf-8') as csvtable:
         fill_table("dob").send_keys(row[2])
         fill_table("phone").send_keys(row[3])
         send_button.click()
+driver.find_element_by_tag_name("button").click()
 
 driver.close()
