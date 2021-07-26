@@ -13,4 +13,4 @@ try:
 
 finally:
     pass
-    driver.close()
+    #driver.close()

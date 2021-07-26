@@ -15,7 +15,7 @@ import os
 
 
 class TestDefaultSuite():
-    def setup_method(self, method):
+    def test_setup_method(self, method):
         runenv = os.environ['RUNENV']
         if runenv == "GITHUB":
             chrome_options = Options()  # Step 2, create options object
@@ -27,7 +27,7 @@ class TestDefaultSuite():
             self.driver = webdriver.Chrome(ChromeDriverManager().install())
         self.vars = {}
 
-    def teardown_method(self, method):
+    def test_teardown_method(self, method):
         self.driver.quit()
 
     def test_firstTest(self):
